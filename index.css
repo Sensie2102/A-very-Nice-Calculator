@@ -1,0 +1,65 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: Gotham Rounded, sans-serif;
+    font-weight: normal;
+  }
+
+body {
+    background-color: #d1c519;
+    z-index:   -1;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.main{
+    background-color: rgba(240, 248, 255,0.5);
+    padding: 2%;
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+}
+.wrapper1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    
+}
+
+button{
+    width: 75px;
+    color: aliceblue;
+    background-color: rgb(78, 78, 78);
+    border-radius: 5px;
+}
+
+button:hover{
+    color: black;
+    background-color: aquamarine;
+}
+
+.output-box{
+    grid-column: 1 / -1;
+    background-color: rgba(78, 78, 78,0.75);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+    
+  }
+
+.output-box .prev-op{
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    border-radius: 10px;
+    
+}
+
+.output-box .curr-op{
+    color: white;
+    font-size: 2.5rem;
+    border-radius: 10px;
+}
